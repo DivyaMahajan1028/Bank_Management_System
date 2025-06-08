@@ -10,7 +10,9 @@ conn = mysql.connector.connect(
 )
 print("Connected:", conn)
 mycursor = conn.cursor()
-
+# mycursor.execute("create database Bank_management_system")
+# mycursor.execute("create table customer_info(Name varchar(20), pin int,Balance INT DEFAULT 0")
+# execute these lines one by one and comment them
 
 def new_user():
     n = input("Enter Your Name: ").upper()
